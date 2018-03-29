@@ -111,22 +111,14 @@ def new_game
     puts "Whoever goes first will play as X...I'll leave it up to you two to decide whom that will be."
     sleep 1.5
     puts "...".each_char { |c| putc c ; sleep 0.25 ; $stdout.flush }
-<<<<<<< HEAD
     puts "...or I could flip a coin for you!"
-=======
-    puts "...or I could flip a coin for you!"
->>>>>>> 50975f319b3dd37804624dac37018e2bd6306b3c
     coin_flip
     sample_board
     until setup_4.over?
       setup_4.play
       play_again?
     end
-<<<<<<< HEAD
 
-=======
-
->>>>>>> 50975f319b3dd37804624dac37018e2bd6306b3c
   else
     invalid_input
     new_game
